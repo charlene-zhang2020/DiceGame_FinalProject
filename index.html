@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <script src="scripts/jquery-3.4.1.min.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <title>Final Project - Mingyue Zhang</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo-img" src="images/dice_logo.png" alt="Dice logo"></a>
+    </header>
+    <div class="banner-top">
+        <div class="title">
+            <h1 id="javascript_message">Roll the Dice</h1>
+        </div>
+        <section>
+            <div class="flex-grid">
+                <article class="experience-wrapper color1">
+                    <h3 class="player-title">You</h3>
+                    <div class="dice-img">
+                        <div class="dice-palce" id="dice1">
+                            <img class="spec-icon" src="images/dice-0.png" alt="Dice-0">
+                        </div>
+                        <div class="dice-palce" id="dice2">
+                            <img class="spec-icon" src="images/dice-0.png" alt="Dice-0">
+                        </div>
+                    </div>
+                    <div class="score">
+                        <p class="title-score">Round Score</p>
+                        <div class="score-number" id="player-score">0</div>
+                    </div>
+                    <div class="score">
+                        <p class="title-score">Game Score</p>
+                        <div class="score-number" id="player-game-score">0</div>
+                    </div>
+                </article>
+                <div class="btn-wrapper color1">
+                    <button class="btn-roll" id="roll-dice">Roll Dice</button>
+                    <button class="btn-new" id="new-game">New Game</button>
+                </div>
+                <article class="experience-wrapper color1">
+                    <h3 class="player-title">Computer</h3>
+                    <div class="dice-img">
+                        <div class="dice-palce" id="dice3">
+                            <img class="spec-icon" src="images/dice-0.png" alt="Dice-0">
+                        </div>
+                        <div class="dice-palce" id="dice4">
+                            <img class="spec-icon" src="images/dice-0.png" alt="Dice-0">
+                        </div>
+                    </div>
+                    <div class="score">
+                        <p class="title-score">Round Score</p>
+                        <div class="score-number" id="comp-score">0</div>
+                    </div>
+                    <div class="score">
+                        <p class="title-score">Game Score</p>
+                        <div class="score-number" id="comp-game-score">0</div>
+                    </div>
+                </article>
+            </div>
+            <div class="btn-wrapper">
+                <h2>Introduction</h2>
+                <article class="rules-flex">
+                    <div class="art-rules">
+                        <p class="text">Welcome to the Ice Dice Game, a thrilling dice game where you compete against
+                            the computer in a race to achieve the highest score. Each player rolls a pair of dice three
+                            times, and the player with the highest cumulative score at the end of the three rounds wins
+                            the game. </p>
+                        <h2>How to Play</h2>
+                        <p class="text">1. Click the "Roll Dice" button to roll a pair of dice for both you and the
+                            computer.</p>
+                        <p class="text">2. Observe the rolled dice values and the calculated scores for the current
+                            round.</p>
+                        <p class="text">3. The game will automatically update the total scores and display them.</p>
+                        <p class="text">4. After three rounds, the game will display a message announcing the winner.
+                        </p>
+                        <p class="text">5. To play again, click the "New Game" button to start a new game</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+    <section id="pop-up">
+        <div id="msg-pop-up">
+            <button id="close-pop-up">✕</button>
+            <h2>Game Over!</h2>
+            <p class="popup-text">You won!</p>
+        </div>
+    </section>
+    <footer class="banner-bottom">
+        <div class="footerstyle">
+            <a class="link" href="mailto:mzhang165@my.bcit.ca">Contact Email</a>
+            <p class="copy">Mingyue Zhang | COMP2132</p>
+        </div>
+    </footer>
+</body>
+
+</html>
